@@ -1,0 +1,34 @@
+{
+  "faq": [
+    {
+      "id": 1,
+      "question": "Hoe snel krijg ik antwoord op mijn vraag?",
+      "answer": "Wij behandelen alle vragen zo snel mogelijk. Dringende zaken behandelen wij met voorrang."
+    },
+    {
+      "id": 2,
+      "question": "Hoe wordt een algemene vergadering georganiseerd?",
+      "answer": "Wij plannen de vergadering, verzenden uitnodigingen, bereiden de agenda voor en stellen het verslag op. U hoeft enkel aanwezig te zijn."
+    },
+    {
+      "id": 3,
+      "question": "Wat is het verschil tussen syndicus en rentmeesterschap?",
+      "answer": "Een syndicus beheert mede-eigendommen (zoals appartementsgebouwen) en zorgt voor het gemeenschappelijk beheer. Een rentmeester beheert private eigendommen voor individuele eigenaars, inclusief huurdersopvolging en financiële afhandeling."
+    },
+    {
+      "id": 4,
+      "question": "Voor wie zijn jullie diensten bedoeld?",
+      "answer": "Onze diensten zijn bedoeld voor eigenaars van mede-eigendommen, private vastgoedeigenaars, en iedereen die professioneel beheer van hun vastgoed wenst in Oost- en West-Vlaanderen."
+    },
+    {
+      "id": 5,
+      "question": "Hoe transparant is de financiële en administratieve opvolging?",
+      "answer": "Wij bieden volledige transparantie via duidelijke rapportages, online toegang tot documenten, en regelmatige updates over alle financiële en administratieve zaken van uw eigendom."
+    },
+    {
+      "id": 6,
+      "question": "Kan ik ook beroep doen op jullie voor een specifieke opdracht?",
+      "answer": "Ja, naast volledig beheer bieden wij ook flexibele dienstverlening voor specifieke opdrachten. Contacteer ons om uw situatie te bespreken en een oplossing op maat te vinden."
+    }
+  ]
+}
