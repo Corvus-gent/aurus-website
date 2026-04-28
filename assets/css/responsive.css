@@ -1,0 +1,179 @@
+/* ============================================
+   RESPONSIVE STYLES
+   ============================================ */
+@media (max-width: 1200px) {
+  .principles-image {
+    flex: 0 0 300px;
+  }
+
+  .service-image {
+    flex: 0 0 40%;
+  }
+
+  .location-content {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 992px) {
+  .header {
+    padding: 15px 30px;
+  }
+
+  .logo {
+    height: 90px;
+  }
+
+  .logo-img {
+    height: 90px;
+  }
+
+  .logo-text {
+    font-size: 22px;
+  }
+
+  .nav {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  /* Disable fullscreen stack on tablet/mobile */
+  .hero.fullscreen-stack-section {
+    position: relative;
+  }
+
+  .fullscreen-stack-overlay {
+    box-shadow: none;
+  }
+
+  /* Disable service card stack on tablet/mobile */
+  .service-card-stack {
+    position: relative;
+    top: auto;
+  }
+
+  /* Sections kunnen scrollen op tablet */
+  .hero,
+  .about,
+  .principles,
+  .faq,
+  .location,
+  .contact {
+    min-height: auto;
+    padding-top: clamp(60px, 10vh, 100px);
+    padding-bottom: clamp(60px, 10vh, 100px);
+  }
+
+  .hero {
+    min-height: 100vh;
+    min-height: 100dvh;
+    padding-top: 120px;
+  }
+
+  .about-container {
+    flex-direction: column;
+  }
+
+  .quote-banner {
+    min-height: 50vh;
+    padding: 40px 30px;
+  }
+
+  .principles-container {
+    flex-direction: column;
+  }
+
+  .principles-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .principles-image {
+    flex: none;
+    height: 300px;
+    max-height: none;
+  }
+
+  .service-card {
+    flex-direction: column;
+    min-height: auto;
+  }
+
+  .service-image {
+    flex: none;
+    height: 250px;
+  }
+
+  .service-content {
+    padding: 30px;
+  }
+
+  .faq-answer {
+    padding: 0 60px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 60px 25px;
+  }
+
+  .contact-info-row {
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+
+  .footer-contact {
+    text-align: left;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 576px) {
+  .hero-content h1 {
+    font-size: 32px;
+  }
+
+  .btn {
+    padding: 0 20px 0 25px;
+    height: 45px;
+    font-size: 14px;
+  }
+
+  .quote-content h2 {
+    font-size: 24px;
+    text-align: center;
+  }
+
+  .quote-banner {
+    justify-content: center;
+  }
+
+  .service-content h3 {
+    font-size: 28px;
+  }
+
+  .faq-answer {
+    padding: 0 20px;
+  }
+
+  .faq-item.active .faq-answer {
+    padding: 0 20px 25px;
+  }
+
+  .footer-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+

@@ -1,0 +1,141 @@
+/* ============================================
+   DROPDOWN MENU - Aanvragen (CBRE Style)
+   ============================================ */
+.nav-dropdown {
+  position: relative;
+}
+
+.nav-btn-dropdown {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dropdown-arrow {
+  transition: transform 0.3s ease;
+}
+
+.nav-dropdown:hover .dropdown-arrow,
+.nav-dropdown.active .dropdown-arrow {
+  transform: rotate(180deg);
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: calc(100% + 20px);
+  left: 50%;
+  transform: translateX(-50%) translateY(10px);
+  width: 650px;
+  background: var(--color-white);
+  border-radius: 0;
+  padding: 0;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.12);
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1001;
+  border-top: 3px solid var(--color-gold);
+}
+
+.dropdown-menu::before {
+  display: none;
+}
+
+.nav-dropdown:hover .dropdown-menu,
+.nav-dropdown.active .dropdown-menu {
+  opacity: 1;
+  visibility: visible;
+  transform: translateX(-50%) translateY(0);
+}
+
+.dropdown-inner {
+  display: flex;
+}
+
+.dropdown-intro {
+  flex: 0 0 240px;
+  padding: 35px 30px;
+  background: var(--color-cream);
+  border-right: 1px solid var(--color-silver);
+}
+
+.dropdown-intro h3 {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: 28px;
+  font-style: italic;
+  color: var(--color-black);
+  margin-bottom: 15px;
+}
+
+.dropdown-intro p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-dark);
+  margin-bottom: 25px;
+}
+
+.dropdown-intro .btn-small {
+  padding: 0 20px;
+  height: 40px;
+  font-size: 13px;
+}
+
+.dropdown-links {
+  flex: 1;
+  display: flex;
+  padding: 25px 0;
+  color: var(--color-black);
+}
+
+.dropdown-column {
+  flex: 1;
+  padding: 0 25px;
+}
+
+.dropdown-column:first-child {
+  border-right: 1px solid var(--color-silver);
+}
+
+.dropdown-link {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 12px 0;
+  background: transparent;
+  border: none;
+  border-bottom: 1px solid var(--color-silver);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-align: left;
+}
+
+.dropdown-link:last-child {
+  border-bottom: none;
+}
+
+.dropdown-link span {
+  font-family: var(--font-body);
+  font-size: 15px;
+  font-weight: 400;
+  color: var(--color-black);
+  transition: color 0.2s ease;
+}
+
+.dropdown-link svg {
+  opacity: 0;
+  transform: translateX(-5px);
+  transition: all 0.2s ease;
+  color: var(--color-gold);
+}
+
+.dropdown-link:hover span {
+  transform: translateX(5px);
+}
+
+.dropdown-link:hover svg {
+  opacity: 1;
+  transform: translateX(0);
+}
+
