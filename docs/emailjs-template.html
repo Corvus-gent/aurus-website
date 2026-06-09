@@ -1,0 +1,51 @@
+<div style="margin:0;padding:0;background:#f5f3ee;font-family:Arial,Helvetica,sans-serif;color:#1d1d1b;">
+  <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;background:#f5f3ee;">
+    <tr>
+      <td style="padding:32px 16px;">
+        <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="max-width:680px;margin:0 auto;border-collapse:collapse;background:#ffffff;border:1px solid #ded8cd;">
+          <tr>
+            <td style="padding:28px 32px 20px;border-bottom:1px solid #ded8cd;">
+              <p style="margin:0 0 8px;font-size:12px;letter-spacing:1px;text-transform:uppercase;color:#8a7f6f;">Aurus Syndicus</p>
+              <h1 style="margin:0;font-size:26px;line-height:1.25;font-weight:600;color:#1d1d1b;">{{form_title}}</h1>
+            </td>
+          </tr>
+          <tr>
+            <td style="padding:28px 32px;">
+              <table role="presentation" width="100%" cellspacing="0" cellpadding="0" style="border-collapse:collapse;margin-bottom:24px;">
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#8a7f6f;width:150px;">Naam</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#1d1d1b;">{{from_name}}</td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#8a7f6f;width:150px;">E-mail</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#1d1d1b;">
+                    <a href="mailto:{{reply_to}}" style="color:#1d1d1b;">{{reply_to}}</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#8a7f6f;width:150px;">Verzonden op</td>
+                  <td style="padding:10px 0;border-bottom:1px solid #eee8dc;font-size:14px;color:#1d1d1b;">{{submitted_at}}</td>
+                </tr>
+              </table>
+
+              <h2 style="margin:0 0 12px;font-size:18px;line-height:1.3;font-weight:600;color:#1d1d1b;">Inhoud aanvraag</h2>
+              <pre style="margin:0;padding:18px;background:#f8f6f1;border:1px solid #eee8dc;border-radius:6px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.65;white-space:pre-wrap;color:#1d1d1b;">{{form_summary}}</pre>
+
+              <h2 style="margin:24px 0 12px;font-size:18px;line-height:1.3;font-weight:600;color:#1d1d1b;">Bijlagen</h2>
+              <pre style="margin:0;padding:18px;background:#f8f6f1;border:1px solid #eee8dc;border-radius:6px;font-family:Arial,Helvetica,sans-serif;font-size:14px;line-height:1.65;white-space:pre-wrap;color:#1d1d1b;">{{attachment_summary}}</pre>
+
+              {{#image_preview_html}}
+              <h2 style="margin:24px 0 12px;font-size:18px;line-height:1.3;font-weight:600;color:#1d1d1b;">Afbeelding preview</h2>
+              {{{image_preview_html}}}
+              {{/image_preview_html}}
+
+              <p style="margin:24px 0 0;font-size:13px;line-height:1.6;color:#8a7f6f;">
+                Pagina: <a href="{{page_url}}" style="color:#1d1d1b;">{{page_url}}</a>
+              </p>
+            </td>
+          </tr>
+        </table>
+      </td>
+    </tr>
+  </table>
+</div>
